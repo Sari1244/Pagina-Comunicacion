@@ -7,32 +7,32 @@ function ComunicacionNoVerbal() {
         {
             titulo: "Kinesis",
             descripcion:
-                "Estudia los movimientos corporales, gestos y expresiones que participan en la comunicación."
+                "Estudia los movimientos corporales, los gestos y las posturas como parte fundamental del mensaje que se transmite, incluso cuando no hay palabras de por medio. Se relaciona con la función emotiva, ya que a través del cuerpo se transmite seguridad o inseguridad, comodidad o incomodidad, sin necesidad de decirlo verbalmente. Puede manifestarse en posturas abiertas, como estar de pie con los brazos relajados, lo cual transmite disposición; o en posturas cerradas, como cruzar los brazos, interpretado como defensa o desinterés. Por ejemplo, en una entrevista de trabajo, mantener los brazos cruzados y evitar el contacto visual transmite nerviosismo, aunque verbalmente se responda con seguridad."
         },
         {
             titulo: "Microexpresiones",
             descripcion:
-                "Pequeñas expresiones faciales que pueden aparecer durante una interacción comunicativa."
+                "Son expresiones faciales extremadamente breves e involuntarias, basadas en los estudios de Paul Ekman, que aparecen y desaparecen en fracciones de segundo y delatan la emoción real de una persona, incluso cuando intenta ocultarla conscientemente. Ekman identificó siete emociones básicas universales, reconocibles en cualquier cultura: alegría, tristeza, miedo, ira, sorpresa, asco y desprecio. Se estudian no solo en su forma, sino también en la intensidad con que se manifiestan en el rostro. Por ejemplo, una persona puede dejar escapar por una fracción de segundo un gesto de tensión en la mandíbula al recibir una noticia que dice que le agrada, revelando una molestia real que sus palabras no expresan."
         },
         {
             titulo: "Proxemia",
             descripcion:
-                "Analiza el uso del espacio y las distancias entre las personas durante la comunicación."
+                "Analiza el uso y manejo del espacio físico y la distancia que las personas mantienen entre sí durante una interacción, distinguiendo generalmente cuatro tipos de distancia: íntima, personal, social y pública. Se relaciona con la función apelativa, porque la distancia elegida comunica el tipo de relación y la intención hacia el otro. Por ejemplo, hablar a pocos centímetros del rostro de alguien es propio de relaciones muy cercanas, y hacerlo con un desconocido puede generar incomodidad o interpretarse como una invasión del espacio personal, mientras que mantener una distancia mayor en una presentación pública responde a una relación más formal."
         },
         {
             titulo: "Paralenguaje",
             descripcion:
-                "Comprende elementos de la voz como el tono, volumen, ritmo y velocidad."
+                "Comprende todos los elementos que acompañan a la voz sin ser propiamente palabras, como el tono, el volumen, el timbre y el ritmo con el que se habla, además de recursos como las onomatopeyas y las segmentaciones lingüísticas dentro del discurso oral. Se relaciona con la función fática, ya que contribuye a mantener y regular el canal de comunicación, ayudando a sostener la atención del receptor. Un ejemplo claro es cómo una misma frase, como 'qué bien', puede transmitir alegría genuina o sarcasmo dependiendo únicamente del tono y el ritmo con que se pronuncie, sin que las palabras cambien en absoluto."
         },
         {
             titulo: "Emblemas y ademanes",
             descripcion:
-                "Incluye gestos y movimientos corporales que pueden transmitir determinados significados."
+                "Son gestos que poseen un significado propio y reconocible, independientemente de las palabras que los acompañen, y que pueden sustituir por completo a un mensaje verbal. Se clasifican en conscientes, que a su vez pueden ser universales, especiales o culturales; e inconscientes, que pueden ser naturales (como morderse las uñas por nervios) o artificiales (gestos aprendidos que se repiten de forma automática). Por ejemplo, el gesto de pulgar arriba para indicar aprobación es un emblema consciente y universal, mientras que tocarse el cuello repetidamente durante una conversación tensa es un gesto inconsciente."
         },
         {
             titulo: "Entorno social",
             descripcion:
-                "Incluye aspectos como la vestimenta, el protocolo y el saludo dentro de diferentes contextos sociales."
+                "Más allá del cuerpo y el rostro, elementos como el protocolo, la vestimenta y el saludo también forman parte activa de la comunicación no verbal, ya que están ligados al código compartido dentro de un grupo social determinado. Estos elementos indican pertenencia a un grupo, jerarquía, nivel de formalidad o el tipo de vínculo que se busca establecer con la otra persona, incluso antes de que se pronuncie una sola palabra. Por ejemplo, presentarse a una entrevista con vestimenta formal comunica seriedad, mientras que un saludo de mano firme transmite seguridad, en contraste con uno débil o evasivo."
         }
     ];
 
@@ -61,9 +61,7 @@ function ComunicacionNoVerbal() {
                     </h1>
 
                     <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-                        La comunicación no verbal comprende diferentes
-                        elementos que permiten transmitir información sin
-                        depender exclusivamente de las palabras.
+                        La comunicación no verbal comprende todos los elementos que permiten transmitir información sin depender exclusivamente de las palabras: el cuerpo, el rostro, el espacio, la voz e incluso la forma de vestir comunican tanto o más que el propio discurso hablado. Reconocer estos elementos permite entender un mensaje de forma más completa, más allá de lo que se dice explícitamente.
                     </p>
 
                 </div>
@@ -112,8 +110,7 @@ function ComunicacionNoVerbal() {
                                 Vestimenta
                             </h3>
                             <p className="mt-2 text-sm leading-6 text-slate-600">
-                                Información que puede transmitir nuestra
-                                apariencia y forma de vestir.
+                                La forma de vestir comunica seriedad, formalidad o pertenencia a un grupo social incluso antes de hablar. Por ejemplo, usar ropa formal en una entrevista transmite respeto hacia la situación.
                             </p>
                         </div>
 
@@ -122,8 +119,7 @@ function ComunicacionNoVerbal() {
                                 Protocolo
                             </h3>
                             <p className="mt-2 text-sm leading-6 text-slate-600">
-                                Normas y comportamientos utilizados en
-                                diferentes situaciones sociales.
+                                Son las normas y comportamientos esperados en cada contexto social, que indican jerarquía y formalidad, como ponerse de pie al saludar a una autoridad.
                             </p>
                         </div>
 
@@ -132,8 +128,7 @@ function ComunicacionNoVerbal() {
                                 Saludo
                             </h3>
                             <p className="mt-2 text-sm leading-6 text-slate-600">
-                                Una forma de establecer contacto e iniciar
-                                una interacción con otras personas.
+                                Es la forma de establecer contacto e iniciar una interacción. Un saludo firme suele transmitir seguridad, mientras que uno débil o evasivo puede interpretarse como inseguridad.
                             </p>
                         </div>
 

@@ -1,21 +1,26 @@
+import perfil_1 from "../../assets/perfil1.jpg"
+import perfil_2 from "../../assets/perfil_2.jpg"
+
 function Integrantes() {
 
     const integrantes = [
         {
-            nombre: "Nombre del integrante 1",
+            nombre: "Sariah Elisabeth Veliz Palacio",
             rol: "Integrante",
             descripcion:
-                "Aquí puedes escribir una pequeña descripción sobre esta persona, sus intereses, habilidades y el aporte que realiza al proyecto.",
+                "¡Hola!, mi nombre es Sariah, soy estudiante del SENA en análisis y desarrollo de software, me gusta leer y escuchar música. Pienso que la comunicacón es fundamental para las relaciones de las personas.",
             formacion: "Estudiante de Desarrollo de Software",
-            intereses: "Diseño, creatividad y tecnología"
+            intereses: "Diseño, creatividad y tecnología",
+            imagen: perfil_1
         },
         {
-            nombre: "Nombre del integrante 2",
+            nombre: "Fabian Ricardo Delgado Peña",
             rol: "Integrante",
             descripcion:
-                "Aquí puedes escribir una pequeña descripción sobre esta persona, sus intereses, habilidades y el aporte que realiza al proyecto.",
+                "Soy estudiante de análisis y desarrollo de software, me gusta la programación y analizar como funcionan los programas. Pienso que la comunicación es algo a lo que le debemos dar más atención ya que de eso depende un buen trabajo en equipo.",
             formacion: "Estudiante de Desarrollo de Software",
-            intereses: "Programación, comunicación y tecnología"
+            intereses: "Programación, comunicación y tecnología",
+            imagen: perfil_2
         }
     ];
 
@@ -88,27 +93,14 @@ function Integrantes() {
                                 <div className="relative">
 
                                     {/* Círculo del avatar */}
-                                    <div className="flex h-44 w-44 items-center justify-center rounded-full border-8 border-white bg-[#0063f8] shadow-lg transition duration-500 group-hover:scale-105">
+                                    <div className="flex h-44 w-44 items-center justify-center overflow-hidden rounded-full border-8 border-white bg-[#0063f8] shadow-lg transition duration-500 group-hover:scale-105">
 
-                                        {/* Icono de usuario */}
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="white"
-                                            strokeWidth="1.5"
-                                            className="h-24 w-24"
-                                        >
-                                            <circle
-                                                cx="12"
-                                                cy="8"
-                                                r="4"
-                                            />
-
-                                            <path
-                                                d="M4 21a8 8 0 0 1 16 0"
-                                            />
-                                        </svg>
+                                        {/* Foto de perfil */}
+                                        <img
+                                            src={integrante.imagen}
+                                            alt={integrante.nombre}
+                                            className="h-full w-full rounded-full object-cover"
+                                        />
 
                                     </div>
 
@@ -223,49 +215,6 @@ function Integrantes() {
 
                 </div>
 
-
-                {/* FRASE FINAL */}
-                <section className="mt-16 overflow-hidden rounded-3xl bg-[#e9f1ff]">
-
-                    <div className="flex flex-col items-center gap-6 px-8 py-12 text-center md:flex-row md:justify-center md:text-left">
-
-                        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#0063f8] text-white">
-
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="1.8"
-                                className="h-7 w-7"
-                            >
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                <circle cx="9" cy="7" r="4" />
-                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                            </svg>
-
-                        </div>
-
-
-                        <div>
-
-                            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#0063f8]">
-                                Trabajo en equipo
-                            </p>
-
-                            <h2 className="mt-2 font-serif text-2xl text-slate-900 md:text-3xl">
-                                Dos personas, diferentes ideas,
-                                <br className="hidden md:block" />
-                                un mismo proyecto.
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
             </main>
 
         </div>
@@ -273,4 +222,3 @@ function Integrantes() {
 }
 
 export default Integrantes;
-
