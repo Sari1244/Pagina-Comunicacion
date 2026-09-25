@@ -1,5 +1,7 @@
+    
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import perfil_2 from "../../assets/funciones-del-lenguaje.png";
 
 function FuncionesLenguaje() {
 
@@ -37,12 +39,11 @@ function FuncionesLenguaje() {
 
                 <Link
                     to="/tematicas"
-                    className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-[#0063f8] transition hover:gap-3"
+                    className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-[#0063f8] transition-all hover:gap-3"
                 >
                     <ArrowLeft size={18} />
                     Volver a Temáticas
                 </Link>
-
 
                 <div className="mb-12">
 
@@ -54,12 +55,30 @@ function FuncionesLenguaje() {
                         Funciones del lenguaje
                     </h1>
 
-                    <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-                        Jakobson identificó seis elementos del proceso comunicativo (emisor, mensaje, receptor, contexto, canal, código) y a cada uno le asoció una función del lenguaje predominante. Entender estas funciones permite reconocer que un mismo idioma puede usarse con propósitos completamente distintos según la intención del hablante, y que casi todo mensaje, sin importar qué tan simple parezca, cumple con alguna de estas seis funciones de forma predominante.
+                    {/* IMAGEN */}
+                    <div className="group relative mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
+                        <img
+                            src={perfil_2}
+                            alt="Funciones del lenguaje"
+                            className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105 md:h-[400px]"
+                        />
+
+                        {/* Degradado sobre la imagen */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    </div>
+
+                    <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+                        Jakobson identificó seis elementos del proceso comunicativo
+                        (emisor, mensaje, receptor, contexto, canal, código) y a cada
+                        uno le asoció una función del lenguaje predominante. Entender
+                        estas funciones permite reconocer que un mismo idioma puede
+                        usarse con propósitos completamente distintos según la
+                        intención del hablante, y que casi todo mensaje, sin importar
+                        qué tan simple parezca, cumple con alguna de estas seis
+                        funciones de forma predominante.
                     </p>
 
                 </div>
-
 
                 {/* FUNCIONES */}
                 <div className="grid gap-6 md:grid-cols-2">
@@ -68,7 +87,7 @@ function FuncionesLenguaje() {
 
                         <article
                             key={funcion.titulo}
-                            className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                            className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
                         >
 
                             <span className="text-sm font-bold text-[#0063f8]">
@@ -89,7 +108,6 @@ function FuncionesLenguaje() {
 
                 </div>
 
-
                 {/* ROMAN JAKOBSON */}
                 <section className="mt-8 rounded-3xl bg-[#111827] p-8 text-white shadow-lg">
 
@@ -102,7 +120,22 @@ function FuncionesLenguaje() {
                     </h2>
 
                     <p className="mt-4 leading-8 text-slate-300">
-                        Roman Osipovich Jakobson nació en Moscú el 11 de octubre de 1896, en el seno de una familia judía, y falleció en Boston el 18 de julio de 1982, dejando tras de sí una de las trayectorias más influyentes dentro de la lingüística del siglo XX. Desde muy joven mostró un interés particular por la poesía y el lenguaje, algo que marcaría el rumbo de toda su carrera intelectual. En 1915 participó en la fundación del Círculo Lingüístico de Moscú, un espacio de discusión académica en torno al lenguaje y la literatura, y en 1917, con apenas 18 años, contribuyó a la creación de la Sociedad para el Estudio del Lenguaje Poético de Leningrado (OPOIAZ), lo que demuestra que su vocación por el estudio del lenguaje se manifestó desde una edad temprana. Durante esta etapa formativa estudió en el Instituto Lázarev de Lenguas Orientales de Moscú, ampliando su formación más allá del ruso y las lenguas eslavas.
+                        Roman Osipovich Jakobson nació en Moscú el 11 de octubre de
+                        1896, en el seno de una familia judía, y falleció en Boston
+                        el 18 de julio de 1982, dejando tras de sí una de las
+                        trayectorias más influyentes dentro de la lingüística del
+                        siglo XX. Desde muy joven mostró un interés particular por
+                        la poesía y el lenguaje, algo que marcaría el rumbo de toda
+                        su carrera intelectual. En 1915 participó en la fundación
+                        del Círculo Lingüístico de Moscú, un espacio de discusión
+                        académica en torno al lenguaje y la literatura, y en 1917,
+                        con apenas 18 años, contribuyó a la creación de la Sociedad
+                        para el Estudio del Lenguaje Poético de Leningrado (OPOIAZ),
+                        lo que demuestra que su vocación por el estudio del lenguaje
+                        se manifestó desde una edad temprana. Durante esta etapa
+                        formativa estudió en el Instituto Lázarev de Lenguas
+                        Orientales de Moscú, ampliando su formación más allá del
+                        ruso y las lenguas eslavas.
                     </p>
 
                 </section>
