@@ -1,5 +1,7 @@
+
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import no_verbal from "../../assets/comunicacion_no_verbal.jpg";
 
 function ComunicacionNoVerbal() {
 
@@ -41,6 +43,7 @@ function ComunicacionNoVerbal() {
 
             <section className="mx-auto max-w-6xl px-6 py-16">
 
+                {/* VOLVER */}
                 <Link
                     to="/tematicas"
                     className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-[#0063f8] transition hover:gap-3"
@@ -50,6 +53,7 @@ function ComunicacionNoVerbal() {
                 </Link>
 
 
+                {/* ENCABEZADO */}
                 <div className="mb-12">
 
                     <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[#0063f8]">
@@ -60,8 +64,26 @@ function ComunicacionNoVerbal() {
                         Comunicación no verbal
                     </h1>
 
-                    <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-                        La comunicación no verbal comprende todos los elementos que permiten transmitir información sin depender exclusivamente de las palabras: el cuerpo, el rostro, el espacio, la voz e incluso la forma de vestir comunican tanto o más que el propio discurso hablado. Reconocer estos elementos permite entender un mensaje de forma más completa, más allá de lo que se dice explícitamente.
+
+                    {/* IMAGEN */}
+                    <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
+
+                        <img
+                            src={no_verbal}
+                            alt="Comunicación no verbal"
+                            className="h-auto max-h-[500px] w-full object-contain"
+                        />
+
+                    </div>
+
+
+                    <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+                        La comunicación no verbal comprende todos los elementos que
+                        permiten transmitir información sin depender exclusivamente de
+                        las palabras: el cuerpo, el rostro, el espacio, la voz e incluso
+                        la forma de vestir comunican tanto o más que el propio discurso
+                        hablado. Reconocer estos elementos permite entender un mensaje de
+                        forma más completa, más allá de lo que se dice explícitamente.
                     </p>
 
                 </div>
@@ -74,7 +96,7 @@ function ComunicacionNoVerbal() {
 
                         <article
                             key={tema.titulo}
-                            className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                            className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
                         >
 
                             <span className="text-sm font-bold text-[#0063f8]">
@@ -109,26 +131,39 @@ function ComunicacionNoVerbal() {
                             <h3 className="font-bold text-[#111827]">
                                 Vestimenta
                             </h3>
+
                             <p className="mt-2 text-sm leading-6 text-slate-600">
-                                La forma de vestir comunica seriedad, formalidad o pertenencia a un grupo social incluso antes de hablar. Por ejemplo, usar ropa formal en una entrevista transmite respeto hacia la situación.
+                                La forma de vestir comunica seriedad, formalidad o
+                                pertenencia a un grupo social incluso antes de hablar.
+                                Por ejemplo, usar ropa formal en una entrevista
+                                transmite respeto hacia la situación.
                             </p>
                         </div>
+
 
                         <div className="rounded-2xl bg-[#f7f5f0] p-5">
                             <h3 className="font-bold text-[#111827]">
                                 Protocolo
                             </h3>
+
                             <p className="mt-2 text-sm leading-6 text-slate-600">
-                                Son las normas y comportamientos esperados en cada contexto social, que indican jerarquía y formalidad, como ponerse de pie al saludar a una autoridad.
+                                Son las normas y comportamientos esperados en cada
+                                contexto social, que indican jerarquía y formalidad,
+                                como ponerse de pie al saludar a una autoridad.
                             </p>
                         </div>
+
 
                         <div className="rounded-2xl bg-[#f7f5f0] p-5">
                             <h3 className="font-bold text-[#111827]">
                                 Saludo
                             </h3>
+
                             <p className="mt-2 text-sm leading-6 text-slate-600">
-                                Es la forma de establecer contacto e iniciar una interacción. Un saludo firme suele transmitir seguridad, mientras que uno débil o evasivo puede interpretarse como inseguridad.
+                                Es la forma de establecer contacto e iniciar una
+                                interacción. Un saludo firme suele transmitir
+                                seguridad, mientras que uno débil o evasivo puede
+                                interpretarse como inseguridad.
                             </p>
                         </div>
 
@@ -143,3 +178,4 @@ function ComunicacionNoVerbal() {
 }
 
 export default ComunicacionNoVerbal;
+
