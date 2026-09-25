@@ -1,7 +1,8 @@
-    
+
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import perfil_2 from "../../assets/funciones-del-lenguaje.png";
+import roman from "../../assets/roman.jpg";
 
 function FuncionesLenguaje() {
 
@@ -37,6 +38,7 @@ function FuncionesLenguaje() {
 
             <section className="mx-auto max-w-6xl px-6 py-16">
 
+                {/* VOLVER */}
                 <Link
                     to="/tematicas"
                     className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-[#0063f8] transition-all hover:gap-3"
@@ -45,6 +47,8 @@ function FuncionesLenguaje() {
                     Volver a Temáticas
                 </Link>
 
+
+                {/* ENCABEZADO */}
                 <div className="mb-12">
 
                     <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[#0063f8]">
@@ -55,17 +59,18 @@ function FuncionesLenguaje() {
                         Funciones del lenguaje
                     </h1>
 
-                    {/* IMAGEN */}
-                    <div className="group relative mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
+
+                    {/* IMAGEN PRINCIPAL */}
+                    <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
+
                         <img
                             src={perfil_2}
                             alt="Funciones del lenguaje"
-                            className="h-[320px] w-full object-cover transition duration-500 group-hover:scale-105 md:h-[400px]"
+                            className="h-auto max-h-[500px] w-full object-contain"
                         />
 
-                        {/* Degradado sobre la imagen */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
                     </div>
+
 
                     <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
                         Jakobson identificó seis elementos del proceso comunicativo
@@ -79,6 +84,7 @@ function FuncionesLenguaje() {
                     </p>
 
                 </div>
+
 
                 {/* FUNCIONES */}
                 <div className="grid gap-6 md:grid-cols-2">
@@ -108,35 +114,58 @@ function FuncionesLenguaje() {
 
                 </div>
 
+
                 {/* ROMAN JAKOBSON */}
-                <section className="mt-8 rounded-3xl bg-[#111827] p-8 text-white shadow-lg">
+                <section className="mt-8 overflow-hidden rounded-3xl bg-[#111827] text-white shadow-lg">
 
-                    <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#60a5fa]">
-                        Autor
-                    </p>
+                    <div className="grid md:grid-cols-[280px_1fr]">
 
-                    <h2 className="mt-3 text-3xl font-bold">
-                        Roman Jakobson
-                    </h2>
+                        {/* FOTO DE ROMAN */}
+                        <div className="flex items-center justify-center bg-[#1f2937] p-6">
 
-                    <p className="mt-4 leading-8 text-slate-300">
-                        Roman Osipovich Jakobson nació en Moscú el 11 de octubre de
-                        1896, en el seno de una familia judía, y falleció en Boston
-                        el 18 de julio de 1982, dejando tras de sí una de las
-                        trayectorias más influyentes dentro de la lingüística del
-                        siglo XX. Desde muy joven mostró un interés particular por
-                        la poesía y el lenguaje, algo que marcaría el rumbo de toda
-                        su carrera intelectual. En 1915 participó en la fundación
-                        del Círculo Lingüístico de Moscú, un espacio de discusión
-                        académica en torno al lenguaje y la literatura, y en 1917,
-                        con apenas 18 años, contribuyó a la creación de la Sociedad
-                        para el Estudio del Lenguaje Poético de Leningrado (OPOIAZ),
-                        lo que demuestra que su vocación por el estudio del lenguaje
-                        se manifestó desde una edad temprana. Durante esta etapa
-                        formativa estudió en el Instituto Lázarev de Lenguas
-                        Orientales de Moscú, ampliando su formación más allá del
-                        ruso y las lenguas eslavas.
-                    </p>
+                            <img
+                                src={roman}
+                                alt="Roman Jakobson"
+                                className="h-auto max-h-[350px] w-full rounded-2xl object-contain"
+                            />
+
+                        </div>
+
+
+                        {/* BIOGRAFÍA */}
+                        <div className="p-8">
+
+                            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#60a5fa]">
+                                Autor
+                            </p>
+
+                            <h2 className="mt-3 text-3xl font-bold">
+                                Roman Jakobson
+                            </h2>
+
+                            <p className="mt-4 leading-8 text-slate-300">
+                                Roman Osipovich Jakobson nació en Moscú el 11 de octubre
+                                de 1896, en el seno de una familia judía, y falleció en
+                                Boston el 18 de julio de 1982, dejando tras de sí una de
+                                las trayectorias más influyentes dentro de la lingüística
+                                del siglo XX. Desde muy joven mostró un interés particular
+                                por la poesía y el lenguaje, algo que marcaría el rumbo de
+                                toda su carrera intelectual. En 1915 participó en la
+                                fundación del Círculo Lingüístico de Moscú, un espacio de
+                                discusión académica en torno al lenguaje y la literatura,
+                                y en 1917, con apenas 18 años, contribuyó a la creación de
+                                la Sociedad para el Estudio del Lenguaje Poético de
+                                Leningrado (OPOIAZ), lo que demuestra que su vocación por
+                                el estudio del lenguaje se manifestó desde una edad
+                                temprana. Durante esta etapa formativa estudió en el
+                                Instituto Lázarev de Lenguas Orientales de Moscú,
+                                ampliando su formación más allá del ruso y las lenguas
+                                eslavas.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </section>
 
