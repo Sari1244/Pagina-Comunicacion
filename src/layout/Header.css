@@ -1,0 +1,15 @@
+.header {
+    background-color: #020617;
+    border-top: 1px solid #e5e7eb3a;
+    border-bottom: 1px solid #e5e7eb3a;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-principal {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
