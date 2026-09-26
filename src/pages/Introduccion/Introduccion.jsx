@@ -1,4 +1,3 @@
-
 import imagenIntroduccion from "../../assets/introduccion.jpg";
 
 function Introduccion() {
@@ -32,7 +31,7 @@ function Introduccion() {
                     <img
                         src={imagenIntroduccion}
                         alt="Introducción a la comunicación"
-                        className="h-auto max-h-[550px] w-full object-contain"
+                        className="h-auto max-h-137.5 w-full object-contain"
                     />
 
                 </div>
@@ -45,7 +44,7 @@ function Introduccion() {
 
                         <p className="leading-relaxed text-slate-600">
                             Cuando empezamos a pensar en la comunicación, nos damos cuenta
-                            de que es algo que hacemos todo el tiempo sin detenernos
+                            que es algo que hacemos todo el tiempo sin detenernos
                             realmente a analizarlo. Hablamos, escuchamos, escribimos,
                             hacemos gestos, cambiamos el tono de voz... y casi nunca nos
                             preguntamos qué hay detrás de todo eso. La comunicación no es
@@ -171,6 +170,34 @@ function Introduccion() {
                     </section>
 
 
+                    {/* 4 PILARES */}
+                    <section className="border-l-2 border-[#0063f8] pl-6">
+
+                        <h2 className="mb-4 font-serif text-2xl text-slate-900">
+                            Los 4 pilares fundamentales de la comunicación
+                        </h2>
+
+                        <p className="leading-relaxed text-slate-600">
+                            Los 4 pilares son: observar, escuchar, analizar y
+                            percibir/experiencias. La observación es lo que nos da la
+                            entrada al estado de la otra persona, se trata de prestar
+                            atención a lo que está haciendo la persona, cómo se expresa su
+                            cara, su cuerpo y su tono de voz. Después de observar viene
+                            escuchar, no se trata solo de oír lo que dice sino de entender
+                            por qué lo dice y qué es lo que busca la otra persona. Luego
+                            está analizar, aquí es donde se usan los elementos que
+                            obtenemos de escuchar y observar, logrando así comprender los
+                            elementos de la comunicación de la otra persona. Por último
+                            tenemos percibir/experiencias, entender los sentimientos de la
+                            otra persona y conocer su intención es lo que nos demuestra que
+                            la comunicación ha sido efectiva, para posteriormente poder
+                            actuar y saber de qué manera comunicarnos con la persona según
+                            el contexto.
+                        </p>
+
+                    </section>
+
+
                     {/* OBJETIVO DEL PROYECTO */}
                     <section className="border-l-2 border-[#0063f8] pl-6">
 
@@ -209,4 +236,3 @@ function Introduccion() {
 }
 
 export default Introduccion;
-

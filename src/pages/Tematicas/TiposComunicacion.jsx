@@ -38,7 +38,7 @@ function TiposComunicacion() {
                         <img
                             src={Tipos_Comunicacion}
                             alt="Tipos de comunicación"
-                            className="h-auto max-h-[500px] w-full object-contain"
+                            className="h-auto max-h-125 w-full object-contain"
                         />
 
                     </div>

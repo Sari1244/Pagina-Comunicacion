@@ -66,7 +66,7 @@ function FuncionesLenguaje() {
                         <img
                             src={perfil_2}
                             alt="Funciones del lenguaje"
-                            className="h-auto max-h-[500px] w-full object-contain"
+                            className="h-auto max-h-125 w-full object-contain"
                         />
 
                     </div>
@@ -126,7 +126,7 @@ function FuncionesLenguaje() {
                             <img
                                 src={roman}
                                 alt="Roman Jakobson"
-                                className="h-auto max-h-[350px] w-full rounded-2xl object-contain"
+                                className="h-auto max-h-87.5 w-full rounded-2xl object-contain"
                             />
 
                         </div>

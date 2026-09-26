@@ -21,7 +21,7 @@ function Header() {
                     <div>
 
                         <h1 className="font-serif text-2xl font-semibold tracking-tight text-[#f7f5f0] transition-colors duration-300 group-hover:text-white">
-                            Comunicación
+                            ComuniPasión
                         </h1>
 
                         <p className="text-[9px] font-medium uppercase tracking-[0.3em] text-slate-400">

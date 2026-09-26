@@ -12,6 +12,8 @@ import Tematicas from "./pages/Tematicas/Tematicas";
 import TiposComunicacion from "./pages/Tematicas/TiposComunicacion";
 import FuncionesLenguaje from "./pages/Tematicas/FuncionesLenguaje";
 import ComunicacionNoVerbal from "./pages/Tematicas/ComunicacionNoVerbal";
+import ComunicacionAsertiva from "./pages/Tematicas/ComunicacionAsertiva";
+import ModeloJakobson from "./pages/Tematicas/ModeloJakobson";
 
 function App() {
 
@@ -28,20 +30,33 @@ function App() {
                         element={<Introduccion />}
                     />
 
-                    <Route path="/Tematicas" element={<Tematicas />} />
+                    <Route
+                        path="/tematicas"
+                        element={<Tematicas />}
+                    />
 
                     <Route
-                        path="/Tematicas/tipos-comunicacion"
+                        path="/tematicas/tipos-comunicacion"
                         element={<TiposComunicacion />}
                     />
 
                     <Route
-                        path="/Tematicas/funciones-lenguaje"
+                        path="/tematicas/comunicacion-asertiva"
+                        element={<ComunicacionAsertiva />}
+                    />
+
+                    <Route
+                        path="/tematicas/funciones-lenguaje"
                         element={<FuncionesLenguaje />}
                     />
 
                     <Route
-                        path="/Tematicas/comunicacion-no-verbal"
+                        path="/tematicas/modelo-jakobson"
+                        element={<ModeloJakobson />}
+                    />
+
+                    <Route
+                        path="/tematicas/comunicacion-no-verbal"
                         element={<ComunicacionNoVerbal />}
                     />
 
